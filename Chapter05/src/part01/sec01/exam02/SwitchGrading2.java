@@ -29,7 +29,7 @@ public class SwitchGrading2 {
 			grade = 'F';
 			break;
 		}
-		System.err.println(grade+"학점");
+		System.out.println(grade+"학점");
 		scanner.close();
 
 	}
