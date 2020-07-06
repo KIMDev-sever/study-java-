@@ -29,6 +29,7 @@ public class SwitchGrading2 {
 			grade = 'F';
 			break;
 		}
+		
 		System.out.println(grade+"ÇÐÁ¡");
 		scanner.close();
 
