@@ -13,12 +13,15 @@ public class Problem09_02 {
 		int len = Math.abs('A' - 'a');
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') {
-				out+=(char)(str.charAt(i)-len);
-			}else {
-				out+=(char)(str.charAt(i)+len);
+				out += (char) (str.charAt(i) - len);
+			} else if (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
+				out += (char) (str.charAt(i) + len);
+			} else {
+				out += (char) str.charAt(i);
 			}
 		}
-		System.out.printf("내용을 거꾸로 출력==>%s",out);
+		System.out.printf("내용을 거꾸로 출력==>%s", out);
+		scanner.close();
 	}
 
 }
