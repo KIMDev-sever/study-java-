@@ -9,6 +9,6 @@ public class Pet {
 	}
 
 	int getAge() {
-		return age;
+		return this.age;
 	}
 }

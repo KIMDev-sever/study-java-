@@ -8,7 +8,9 @@ class Accumulator {
 		total += amount;
 		grandTotal += amount;
 	}
-
+	static int getGrandTotal() {
+		return grandTotal;
+	}
 }
 
 public class StaticFieldExample1 {
