@@ -14,25 +14,27 @@ public class StudentScoreMain {
 			stu.name = scanner.next();
 			System.out.print("반:");
 			stu.ban = scanner.nextInt();
+			System.out.print("번호:");
+			stu.no = scanner.nextInt();
 			System.out.print("국어점수:");
 			stu.kor = scanner.nextInt();
 			System.out.print("영어점수:");
 			stu.eng = scanner.nextInt();
 			System.out.print("수학점수:");
 			stu.mat = scanner.nextInt();
-	
+
 			students[i] = stu;
 		}
 		for (Student stu : students) {
-			String output = "이름:" + stu.name + "\n" + "반:" + stu.ban + "\n" + "국어점수:" + stu.kor
-					+ "\n" + "영어점수:" + stu.eng + "\n" + "수학점수:" + stu.mat + "\n" + "총점:" + stu.getTotal()
-					+ "\n" + "평균:" +stu.getAverage() + "\n";
+			String output = "이름:" + stu.name + "\n" + "반:" + stu.ban + "\n" + "번호:" + stu.ban + "\n" + "국어점수:" + stu.kor
+					+ "\n" + "영어점수:" + stu.eng + "\n" + "수학점수:" + stu.mat + "\n" + "총점:" + stu.getTotal() + "\n" + "평균:"
+					+ stu.getAverage() + "\n";
 			System.out.printf(output);
 			System.out.println();
 
 		}
 		scanner.close();
-		
+
 	}
 
 }
