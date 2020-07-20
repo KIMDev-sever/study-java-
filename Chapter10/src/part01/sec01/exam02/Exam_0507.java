@@ -12,7 +12,7 @@ public class Exam_0507 {
 		while (true) {
 			System.out.println("1.입실 2.퇴실 3.보기 4.종료");
 			int select = System.in.read() - 48;
-			System.in.skip(5);
+//			System.in.skip(5);
 			switch (select) {
 			case 1:
 				room.input();

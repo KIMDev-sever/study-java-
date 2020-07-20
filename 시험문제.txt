@@ -1,18 +1,34 @@
 1.운영체제의 특징과 종류 
-2.시분할(time sharing)이란 
+2.시분할(time sharing)이란
 3.cli (Command Line interfase)==path,dir,cd
+
 4.프로세스란? 
+
 5.라운드로빈이란 무엇인가
+
 6.데이터의 관계를 표현한 데이터베이스
-7RDMS의 종류
-8데이터베이스 create,drop,commit,rollback의 의미
+
+7RDBMS의 종류
+
+8데이터베이
+스 create,drop,commit,rollback의 의미
+
+
 9CRUD란
-10.html 문서를 주고 받는데 쓰는 통신 프로토콜?
+
+10.html 문서를 주고 받는데 쓰는 통신 프로토콜
+
 11.TCP/IP를 사용하는 통신 방식은?
+
 12.FTP프로토콜에 대한 설명
+
 13.TCP/IP에대해 간단하게 공부
+
 14.프로토콜에대한 정의
+
 15.java compiler,java실행 파일
+
+javac -class
 
 
 실기 (캡처파일 저장)
