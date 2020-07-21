@@ -5,7 +5,7 @@ public class PointTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Point3D p3 = new Point3D(1, 2, 3);
-		String str = p3.getLocation();
+		String str = p3.toString();
 		System.out.println(str);
 	}
 
@@ -33,16 +33,19 @@ class Point {
 class Point3D extends Point {
 	private int z;
 
-	@Override // 부모와 자식간에 오버라이딩시 무조건 자식께 사용됨
+	//@Override // 부모와 자식간에 오버라이딩시 무조건 자식께 사용됨
 	// 재정의
-	String getLocation() {
-		// TODO Auto-generated method stub
-		return "x=" + x + ",y=" + y + ",z=" + z;
-	}
+//	String getLocation() {
+//		// TODO Auto-generated method stub
+//		return "x=" + x + ",y=" + y + ",z=" + z;
+//	}
 
 	public Point3D(int x, int y, int z) {
 		// TODO Auto-generated constructor stub
 		super(x, y);
 		this.z = z;
+	}
+	public String toString() {
+		return "x=" + x + ",y=" + y + ",z=" + z;
 	}
 }
