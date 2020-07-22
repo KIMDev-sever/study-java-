@@ -74,7 +74,8 @@ class MemberPro {
 		System.out.println("전화번호를 입력하시오");
 		String tel = scanner.next();
 		System.out.println("주소를 입력하시오");
-		String addr = scanner.next();
+		scanner.nextLine();
+		String addr = scanner.nextLine();
 		members[po] = new Member3(name, tel, addr);
 		this.po++;
 		if (po == members.length) {
@@ -101,14 +102,12 @@ class MemberPro {
 				for (int j = i; j < (po - 1); j++) {
 					members[i] = members[j + 1];
 				}
+				po--;
 				System.out.println(name + "회원님을 삭제하였습니다");
 				return;
 			}
-			if(i==(po-1)) {
-				members[i]=new Member3("", "", "");
-			}
+
 		}
-		System.out.println(name + "님은 저희 회원이아닙니다.");
 
 	}
 
@@ -141,7 +140,7 @@ public class Exam_12 {
 		while (true) {
 			System.out.println("1.입력 2.출력 3.삭제 4.수정 5.종료");
 			int select = System.in.read() - 48;
-			System.in.skip(5);
+			System.in.skip(2); // LFCR 줄을바꾸고 앞으로 이동
 			switch (select) {
 			case 1:
 				memberPro.input();
