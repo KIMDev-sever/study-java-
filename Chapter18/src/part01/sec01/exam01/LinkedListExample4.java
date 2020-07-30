@@ -1,10 +1,13 @@
 package part01.sec01.exam01;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-public class ArrayListExample2 {
+public class LinkedListExample4 {
+
 	public static void main(String[] args) {
-		ArrayList<String> list = new ArrayList<String>();
+		// TODO Auto-generated method stub
+		LinkedList<String> list = new LinkedList<String>();
 		list.add("포도");
 		list.add("사과");
 		list.add("딸기");
@@ -17,4 +20,5 @@ public class ArrayListExample2 {
 			System.out.println(list.get(i));
 		}
 	}
+
 }
