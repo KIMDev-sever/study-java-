@@ -20,7 +20,7 @@ class SimpleNumber2 {
 	@Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
-		return String.valueOf(num).hashCode();
+		return num;
 	}
 
 	@Override
