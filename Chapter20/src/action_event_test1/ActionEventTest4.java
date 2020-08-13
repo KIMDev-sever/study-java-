@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 class MyFrame4 extends JFrame {
 	private JButton button;
 	private JLabel label;
-
+	private JButton button2;
 	public MyFrame4() {
 		// TODO Auto-generated constructor stub
 		this.setSize(300, 200);
