@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -29,6 +30,7 @@ public class JTextTest extends JFrame{
 		login=new JButton("로그인");
 		signin=new JButton("회원가입");
 		area=new JTextArea(5,15);
+		JScrollPane scrollPane=new JScrollPane(area);
 		setLayout(new BorderLayout());
 		JPanel jPanel=new JPanel();
 		jPanel.add(label);
@@ -38,7 +40,7 @@ public class JTextTest extends JFrame{
 		jPanel.add(pass);
 		jPanel.add(login);
 		jPanel.add(signin);
-		jPanel.add(area);
+		jPanel.add(scrollPane);
 		add(jPanel);
 		setSize(230,300);
 		setVisible(true);
